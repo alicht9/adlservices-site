@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
 
-    <title>ADL Services — Handyman, Welding &amp; Mechanical | Flagstaff</title>
+    <title>ADL Services — Handyman, Welding &amp; Mechanical | Northern &amp; Central Arizona</title>
     <meta
       name="description"
-      content="Handyman, RV repair, welding, fabrication, mechanical work and consulting in the Flagstaff area. Call 480-504-6011."
+      content="Handyman, RV repair, welding, fabrication, mechanical work and consulting. Serving Flagstaff, Phoenix, Tonto Basin and the White Mountains / Rim Country. Call 480-504-6011."
     />
 
     <meta name="theme-color" content="#e8e9e5" media="(prefers-color-scheme: light)" />
@@ -23,7 +23,13 @@
         "description": "Handyman, RV repair, welding, fabrication, mechanical work and consulting.",
         "telephone": "+1-480-504-6011",
         "email": "ADL.services928@gmail.com",
-        "areaServed": { "@type": "City", "name": "Flagstaff, Arizona" },
+        "areaServed": [
+          { "@type": "City", "name": "Flagstaff, Arizona" },
+          { "@type": "City", "name": "Phoenix, Arizona" },
+          { "@type": "Place", "name": "Tonto Basin, Arizona" },
+          { "@type": "Place", "name": "White Mountains, Arizona" },
+          { "@type": "Place", "name": "Rim Country, Arizona" }
+        ],
         "url": "https://adlservices.pro"
       }
     </script>
@@ -36,7 +42,7 @@
     />
 
     <style>
-      /* ADL Services — Flagstaff.
+      /* ADL Services — northern & central Arizona.
          Palette taken from the work itself: steel plate, the orange of hot
          metal, ponderosa green. Type is signage-condensed, the way a shop
          sign or a truck door is lettered.
@@ -115,14 +121,23 @@
       }
 
       .mast .where {
-        display: inline-block;
-        margin-top: 10px;
+        display: block;
+        margin-top: 14px;
         font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
         font-weight: 600;
-        font-size: 15px;
-        letter-spacing: 0.14em;
+        font-size: clamp(17px, 4.6vw, 20px);
+        line-height: 1.25;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--pine);
+      }
+
+      .mast .where .lead {
+        display: block;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        color: var(--ink-3);
+        margin-bottom: 3px;
       }
 
       /* ---- the point of the page ---- */
@@ -273,7 +288,10 @@
           Handyman, welding, and mechanical work — plus the jobs other people
           turn down.
         </p>
-        <span class="where">Flagstaff area</span>
+        <span class="where">
+          <span class="lead">Serving</span>
+          Flagstaff &middot; Phoenix &middot; Tonto Basin<br />White Mountains &amp; Rim Country
+        </span>
       </header>
 
       <a class="call" href="tel:+14805046011">
@@ -299,7 +317,7 @@
       </p>
 
       <footer>
-        <span>ADL Services &middot; Flagstaff, AZ</span>
+        <span>ADL Services &middot; Arizona</span>
         <a href="https://mado.adlservices.pro">mado</a>
       </footer>
     </main>
