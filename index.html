@@ -267,6 +267,11 @@
         color: var(--arc);
       }
 
+      .foot-links {
+        display: flex;
+        gap: 14px;
+      }
+
       a:focus-visible {
         outline: 3px solid var(--pine);
         outline-offset: 3px;
@@ -318,7 +323,11 @@
 
       <footer>
         <span>ADL Services &middot; Arizona</span>
-        <a href="https://mado.adlservices.pro">mado</a>
+        <span class="foot-links">
+          <a href="/sms-privacy.html">Privacy</a>
+          <a href="/sms-terms.html">Terms</a>
+          <a href="https://mado.adlservices.pro">mado</a>
+        </span>
       </footer>
     </main>
   </body>
