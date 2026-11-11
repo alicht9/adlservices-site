@@ -252,7 +252,7 @@
         border-top: 1px solid var(--rule);
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         gap: 14px;
         font-size: 14px;
         color: var(--ink-3);
@@ -267,9 +267,18 @@
         color: var(--arc);
       }
 
-      .foot-links {
-        display: flex;
-        gap: 14px;
+      .built-in {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+      }
+
+      .az-flag {
+        width: 21px;
+        height: 14px;
+        border-radius: 2px;
+        box-shadow: 0 0 0 1px var(--rule);
       }
 
       a:focus-visible {
@@ -320,9 +329,8 @@
       </p>
 
       <footer>
-        <span>ADL Services &middot; Arizona</span>
-        <span class="foot-links">
-        </span>
+        <span>ADL Services</span>
+        <span class="built-in"><svg class="az-flag" viewBox="0 0 36 24" aria-hidden="true"><path d="M18.00 12.00 L0.00 12.00 L0.00 7.56Z" fill="#bf0a30"/><path d="M18.00 12.00 L0.00 7.56 L0.00 2.55Z" fill="#fed700"/><path d="M18.00 12.00 L0.00 2.55 L0.00 0.00 L4.45 0.00Z" fill="#bf0a30"/><path d="M18.00 12.00 L4.45 0.00 L9.72 0.00Z" fill="#fed700"/><path d="M18.00 12.00 L9.72 0.00 L13.45 0.00Z" fill="#bf0a30"/><path d="M18.00 12.00 L13.45 0.00 L16.54 0.00Z" fill="#fed700"/><path d="M18.00 12.00 L16.54 0.00 L19.46 0.00Z" fill="#bf0a30"/><path d="M18.00 12.00 L19.46 0.00 L22.55 0.00Z" fill="#fed700"/><path d="M18.00 12.00 L22.55 0.00 L26.28 0.00Z" fill="#bf0a30"/><path d="M18.00 12.00 L26.28 0.00 L31.55 0.00Z" fill="#fed700"/><path d="M18.00 12.00 L31.55 0.00 L36.00 0.00 L36.00 2.55Z" fill="#bf0a30"/><path d="M18.00 12.00 L36.00 2.55 L36.00 7.56Z" fill="#fed700"/><path d="M18.00 12.00 L36.00 7.56 L36.00 12.00Z" fill="#bf0a30"/><rect y="12" width="36" height="12" fill="#002868"/><path d="M18.00 6.80 L16.77 10.30 L13.05 10.39 L16.00 12.65 L14.94 16.21 L18.00 14.10 L21.06 16.21 L20.00 12.65 L22.95 10.39 L19.23 10.30Z" fill="#ce5c17"/></svg>Built in Arizona</span>
       </footer>
     </main>
   </body>
